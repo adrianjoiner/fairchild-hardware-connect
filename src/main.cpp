@@ -28,16 +28,13 @@ Serial.begin(57600);              //Set the serial output to 57600 kbps.
   timer_setup();                  //Setup the timers for the receiver inputs and ESC's output.
   delay(50); 
 
+  // Read and print what'e being recieved from the RX
   reading_receiver_signals();
-
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 }
-
-
-
 
 void reading_receiver_signals(void) {
   Serial.println("Stating to look for rx signal");
